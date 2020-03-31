@@ -11,7 +11,7 @@ const corsOptions = {
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
-app.use('/api',cors(corsOptions), routes)
+app.use('/fitness-app-API/api',cors(corsOptions), routes)
 
 
 app.get('/', (req, res) =>  res.send('Welcome to FitnessAPI'))
